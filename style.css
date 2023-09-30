@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Pixelify+Sans&display=swap");
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #332e30;
+}
+.wrapper {
+  width: 1100px;
+  border-radius: 20px;
+  padding: 25px;
+  background: #d6c6a9;
+  border: 3px solid black;
+}
+
+.wrapper header {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Alex Brush", cursive;
+}
+
+.blackScreen {
+  display: flex;
+  width: 200px;
+  height: 80px;
+  padding-top: 10px;
+  background: #61733c;
+  border: 5px solid black;
+  font-family: "Pixelify Sans", cursive;
+}
+
+.blackScreen .pb {
+  text-transform: lowercase;
+  padding-left: 5px;
+}
+
+.blackScreen .sos {
+  text-transform: uppercase;
+  padding-top: 15px;
+  font-size: 40px;
+}
+
+.volume-slider input {
+  accent-color: blue;
+}
+
+.keys-checkbox input {
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+  appearance: none;
+  background: black;
+  transition: 0.2s;
+}
+
+.keys-checkbox input::before {
+  background: orange;
+  border: 3px solid black;
+  content: "";
+  height: 30px;
+  width: 60px;
+  position: absolute;
+  transition: 0.2s;
+}
+
+.power input {
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+  appearance: none;
+  background: black;
+  transition: 0.2s;
+}
+
+.power input::before {
+  background: red;
+  border: 3px solid green;
+  content: "";
+  height: 30px;
+  width: 60px;
+  position: absolute;
+  transition: 0.2s;
+}
+
+.keys-checkbox input:checked::before {
+  border: 3px solid green;
+}
+
+.power input:checked::before {
+  border: 3px solid black;
+}
+
+.pKeys {
+  display: flex;
+  list-style: none;
+}
+
+.pKeys .key {
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.pKeys .white {
+  width: 70px;
+  height: 230px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background: white;
+}
+
+.pKeys .black {
+  width: 44px;
+  height: 140px;
+  z-index: 2;
+  margin: 0 -22px 0 -22px;
+  border-radius: 0 0 5px 5px;
+  background: black;
+}
+
+.pKeys .key span {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: grey;
+}
+
+.pKeys .key.hide span {
+  display: none;
+}
+
+.hide label {
+  display: none;
+}

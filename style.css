@@ -115,6 +115,11 @@ body {
   background: white;
 }
 
+.pKeys .white.active {
+  box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
+  background:linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
+}
+
 .pKeys .black {
   width: 44px;
   height: 140px;
@@ -122,6 +127,11 @@ body {
   margin: 0 -22px 0 -22px;
   border-radius: 0 0 5px 5px;
   background: black;
+}
+
+.pKeys .black.active {
+  box-shadow: inset -5px -10px 10px rgba(255,255,255,0.1);
+  background:linear-gradient(to bottom, #000000, #434343);
 }
 
 .pKeys .key span {
